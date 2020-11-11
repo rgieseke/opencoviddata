@@ -125,4 +125,4 @@ for state in state_ids.keys():
         tooltip=tooltip,
     )
 
-    (chart + text).save(str(root / f"www/{ state.lower() }.html"))
+    (chart + text).save(str(root / f"docs/{ state.lower() }.html"))
