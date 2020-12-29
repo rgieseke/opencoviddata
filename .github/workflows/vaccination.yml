@@ -1,0 +1,31 @@
+name: Vaccination data
+on:
+  schedule:
+    - cron:  '5 9,13 * * *'
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+      - name: Fetch data
+        run: wget "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.xlsx?__blob=publicationFile" -O Impfquotenmonitoring.xlsx
+      - name: Update data
+        run: python scripts/vaccination.py
+      - name: Commit back
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.email "<>"
+          git config user.name "Update Bot"
+          git checkout main
+          git add data/vaccination/vaccination.csv
+          git commit -m "Update vaccination data" && \
+            git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main
+
