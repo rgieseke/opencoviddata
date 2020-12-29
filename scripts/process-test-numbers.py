@@ -4,7 +4,7 @@ from pathlib import Path
 
 root = Path(__file__).parents[1]
 
-excel_file = root / "Testzahlen-gesamt.xlsx"
+excel_file = root / "raw/Testzahlen-gesamt.xlsx"
 
 test_numbers = pd.read_excel(
     excel_file, sheet_name="Testzahlen", skiprows=2, skipfooter=2, usecols="B:F",
@@ -59,7 +59,7 @@ backlog = backlog.round().astype("Int64")
 df = test_numbers.join(test_capacity).join(backlog)
 
 header = f"""# Quelle: Robert Koch-Institut
-# CSV-Version ders auf
+# CSV-Version der auf
 # https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Testzahl.html
 # verfügbaren Excel-Datei.
 #
