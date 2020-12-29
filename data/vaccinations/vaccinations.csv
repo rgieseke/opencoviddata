@@ -1,0 +1,31 @@
+# Digitales Impfquotenmonitoring zur COVID-19-Impfung
+# Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
+# 
+# Gemeldete Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation
+# Datenstand: 28.12.2020, 16:15 Uhr
+# Die kumulative Zahl der Impfungen umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI. 
+# Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
+# Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
+# Achtung: Die Differenz zum Vortag kann Nachmeldungen aus vorangegangenen Tagen enthalten und spiegelt nicht immer die innerhalb des Vortags tatsächlich durchgeführte Zahl der Impfungen wider. 
+# * in einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen
+# ** In Sachsen-Anhalt wurde bereits am 26.12.2020 mit den Impfungen begonnen.
+# Anmerkung zu den Indikationen: es können mehrere Indikationen je geimpfter Person vorliegen 
+# 
+Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter,Berufliche Indikation,Medizinische Indikation,PflegeheimbewohnerIn
+Baden-Württemberg*,2084,,624,964,151,
+Bayern,3389,,994,1051,68,1620
+Berlin,1626,,1416,228,105,1398
+Brandenburg,100,,80,20,,12
+Bremen*,420,,205,87,,
+Hamburg,445,,197,222,0,223
+Hessen,3112,,1086,1694,154,1347
+Mecklenburg-Vorpommern*,590,,,240,,350
+Niedersachsen,334,,42,116,140,306
+Nordrhein-Westfalen*,5405,,,1370,,3985
+Rheinland-Pfalz*,1252,,,620,,632
+Saarland,215,,168,4,,211
+Sachsen,182,,90,69,0,113
+Sachsen-Anhalt**,1504,1357,669,644,0,847
+Schleswig-Holstein,809,,213,239,344,553
+Thüringen,99,,49,50,,49
+Gesamt,21566,1357,5833,7618,962,11646
