@@ -26,7 +26,9 @@ meta += [
         for i in footnotes.dropna(how="all", axis=1).index.values
         if not pd.isnull(i)
     ]
-meta += [""]
+
+# Remove duplicates in metadata
+meta = list(dict.fromkeys(meta))
 
 with open(root / "data/vaccinations/vaccinations.csv", "w") as f:
     for line in meta:

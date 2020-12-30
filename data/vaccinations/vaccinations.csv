@@ -6,9 +6,7 @@
 # Die kumulative Zahl der Impfungen umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI. 
 # Achtung: Die Differenz zum Vortag kann Nachmeldungen aus vorangegangenen Tagen enthalten und spiegelt nicht immer die innerhalb des Vortags tatsächlich durchgeführte Zahl der Impfungen wider. 
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
-# Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
-# 
 Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*,Pflegeheim-bewohnerIn*
 Baden-Württemberg,8242,3509,3243,2994,517,933
 Bayern,12935,7716,3010,5573,214,5314
