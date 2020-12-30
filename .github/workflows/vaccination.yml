@@ -1,7 +1,7 @@
 name: Vaccination data
 on:
   schedule:
-    - cron:  '30 8,13 * * *'
+    - cron:  '5 9,13 * * *'
 jobs:
   update:
     runs-on: ubuntu-latest
