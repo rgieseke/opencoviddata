@@ -17,7 +17,7 @@ jobs:
       - name: Fetch data
         run: wget "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.xlsx?__blob=publicationFile" -O Impfquotenmonitoring.xlsx
       - name: Update data
-        run: python scripts/vaccination.py
+        run: python scripts/vaccinations.py
       - name: Commit back
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
