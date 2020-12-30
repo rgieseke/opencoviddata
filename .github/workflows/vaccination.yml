@@ -25,7 +25,7 @@ jobs:
           git config user.email "<>"
           git config user.name "Update Bot"
           git checkout main
-          git add data/vaccination/vaccination.csv
+          git add data/vaccinations/vaccinations.csv
           git commit -m "Update vaccination data" && \
             git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main
 
