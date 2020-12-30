@@ -1,7 +1,7 @@
 name: Vaccination data
-on:
-  schedule:
-    - cron:  '5 9,13 * * *'
+on: [push]
+  #schedule:
+  #  - cron:  '5 9,13 * * *'
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -15,7 +15,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
       - name: Fetch data
-        run: wget "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.xlsx?__blob=publicationFile" -O Impfquotenmonitoring.xlsx
+        run: wget "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.xlsx?__blob=publicationFile" -O raw/Impfquotenmonitoring.xlsx
       - name: Update data
         run: python scripts/vaccinations.py
       - name: Commit back

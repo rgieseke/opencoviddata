@@ -6,7 +6,7 @@ import pandas as pd
 
 root = Path(__file__).parents[1]
 
-excel_file = root / "Impfquotenmonitoring.xlsx"
+excel_file = root / "raw/Impfquotenmonitoring.xlsx"
 
 
 meta = """Digitales Impfquotenmonitoring zur COVID-19-Impfung
