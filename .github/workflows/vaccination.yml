@@ -1,7 +1,7 @@
 name: Vaccination data
 on:
   schedule:
-    - cron:  '5 9,13 * * *'
+    - cron:  '5 11 * * *'
 jobs:
   update:
     name: Update vaccination data
