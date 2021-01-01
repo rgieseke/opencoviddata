@@ -1,28 +1,30 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
+# CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
+# Abfragezeitpunkt: 2021-01-01 15:34:16
 # 
 # Erläuterung
 # Gemeldete Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation
-# Datenstand: 28.12.2020, 08:00 Uhr =TODAY() 08:30 Uhr
+# Datenstand: 28.12.2020, 08:00 Uhr =TODAY() 12:30 Uhr
 # Die kumulative Zahl der Impfungen umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI. 
-# Achtung: Die Differenz zum Vortag kann Nachmeldungen aus vorangegangenen Tagen enthalten und spiegelt nicht immer die innerhalb des Vortags tatsächlich durchgeführte Zahl der Impfungen wider. 
+# Achtung: Die Differenz zum Vortag kann Nachmeldungen oder Korrekturen aus vorangegangenen Tagen enthalten und spiegelt nicht immer die innerhalb des Vortags tatsächlich durchgeführte Zahl der Impfungen wider. 
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*,Pflegeheim-bewohnerIn*
-Baden-Württemberg,12649,4407,5347,4196,763,1831
-Bayern,28206,15104,5831,13981,424,10347
-Berlin,9084,2788,6554,2733,105,6350
-Brandenburg,3036,1483,204,2812,20,224
-Bremen,1691,601,821,408,5,510
-Hamburg,2040,541,832,1042,,999
-Hessen,15674,6226,4677,8681,712,6512
-Mecklenburg-Vorpommern,11101,3640,173,6349,7,4651
-Niedersachsen,2705,1178,296,1512,315,1423
-Nordrhein-Westfalen,19930,7359,,6610,,13693
-Rheinland-Pfalz,4247,1673,,1941,,2306
-Saarland,2119,601,1641,161,,899
-Sachsen,2653,1166,150,2460,1,192
-Sachsen-Anhalt,10100,2813,3107,5068,300,4815
-Schleswig-Holstein,5581,1747,1385,3361,1175,2241
-Thüringen,810,138,232,297,,413
-Gesamt,131626,51465,31250,61612,3827,57406
+Baden-Württemberg,17086,4295,7578,5423,1037,2693
+Bayern,37955,9749,7840,18450,718,14265
+Berlin,11114,2030,7029,2952,105,8161
+Brandenburg,3219,183,204,2995,20,224
+Bremen,1741,50,821,408,6,237
+Hamburg,2759,719,1129,1420,,1341
+Hessen,21373,5699,6073,12345,821,8513
+Mecklenburg-Vorpommern,11494,393,178,6583,8,4804
+Niedersachsen,3566,861,567,1981,654,2044
+Nordrhein-Westfalen,24924,3033,,8963,,16334
+Rheinland-Pfalz,5112,865,,2329,,2783
+Saarland,2716,597,2065,248,,1080
+Sachsen,3290,637,226,2754,1,535
+Sachsen-Anhalt,11146,1046,3506,5582,458,5346
+Schleswig-Holstein,7270,1689,1766,4523,1527,2817
+Thüringen,810,0,232,297,0,413
+Gesamt,165575,31846,39214,77253,5355,71590

@@ -1,3 +1,4 @@
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -12,7 +13,9 @@ excel_file = root / "raw/Impfquotenmonitoring.xlsx"
 
 meta = [
     "Digitales Impfquotenmonitoring zur COVID-19-Impfung",
+    "CSV-Version der Excel-Datei des RKI",
     "Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm",
+    f"Abfragezeitpunkt: { datetime.now().strftime('%Y-%m-%d %H:%M:%S') }",
     "",
 ]
 
