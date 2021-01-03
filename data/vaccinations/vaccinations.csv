@@ -1,7 +1,7 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-03 11:33:23
+# Abfragezeitpunkt: 2021-01-03 13:38:22
 # 
 # Erläuterung
 # Gemeldete Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation
@@ -11,20 +11,20 @@
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*,Pflegeheim-bewohnerIn*
-Baden-Württemberg,20045,2958,9087,6185,1189,3403
-Bayern,39005,1050,7840,19500,718,14265
-Berlin,13137,2023,8662,3319,105,9817
+Baden-Württemberg,24063,4014,11041,7428,1382,4200
+Bayern,57833,11742,12855,25636,1091,20428
+Berlin,14616,1443,9817,3647,105,10968
 Brandenburg,3219,,204,2995,20,224
-Bremen,1741,,821,408,6,237
-Hamburg,3042,283,1129,1703,,1341
-Hessen,24791,3418,6909,14480,955,9680
+Bremen,1837,96,824,465,9,265
+Hamburg,3704,662,1439,2010,,1696
+Hessen,30085,5294,8443,17635,1096,11569
 Mecklenburg-Vorpommern,11494,,178,6583,8,4804
-Niedersachsen,3945,379,773,2105,827,2362
-Nordrhein-Westfalen,33375,7908,,11846,0,21537
-Rheinland-Pfalz,6898,439,,3166,,3732
-Saarland,3316,600,2508,335,,1294
-Sachsen,4000,710,297,3320,1,679
-Sachsen-Anhalt,11771,625,3782,5760,495,5793
-Schleswig-Holstein,7964,694,2130,4690,1798,3384
+Niedersachsen,4962,1017,912,2641,982,2918
+Nordrhein-Westfalen,48691,13142,,18806,,29893
+Rheinland-Pfalz,7248,59,,3516,,3732
+Saarland,4149,833,3122,495,,1580
+Sachsen,4343,343,368,3535,1,807
+Sachsen-Anhalt,12822,1051,4237,6194,546,6410
+Schleswig-Holstein,8933,969,2525,5136,2077,3987
 Thüringen,810,,232,297,,413
-Gesamt,188553,21087,44552,86692,6122,82965
+Gesamt,238809,40665,56197,107019,7317,103894
