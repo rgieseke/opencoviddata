@@ -1,35 +1,34 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-05 08:48:41
+# Abfragezeitpunkt: 2021-01-05 14:35:07
 # 
 # Erläuterung
-# Datenstand: 28.12.2020, 08:00 Uhr =TODAY() 12:00 Uhr
-# Gemeldete Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation (03.01.21)
-# Die kumulative Zahl der Impfungen umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI. 
+# Datenstand: 05.01.2021, 12:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich zum 04.01.21 (Impfungen_bis_einschl_04.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 04.01.21 durchgeführt und bis zum 05.01.21, 12:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
-# Achtung: Die Differenz zum Vortag kann Nachmeldungen aus vorangegangenen Tagen enthalten und spiegelt nicht immer die innerhalb des Vortags tatsächlich durchgeführte Zahl der Impfungen wider. 
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
-# Gemeldete Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
-# Diese Zahl umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI.
-# Anmerkung zu den Indikationen: es können mehrere Indikationen je geimpfter Person vorliegen
+# Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
+# In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
+#  
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*
-Baden-Württemberg,27454,3390,12584,8739,1469
-Bayern,66258,8425,15480,31755,1280
-Berlin,17758,935,10507,6132,105
-Brandenburg,3309,,204,3085,20
-Bremen,1903,66,824,506,9
-Hamburg,4140,436,1616,2189,0
-Hessen,33405,3320,9387,19405,1185
-Mecklenburg-Vorpommern,11494,,178,6583,8
-Niedersachsen,5394,432,992,2822,1035
-Nordrhein-Westfalen,53841,3539,0,21354,0
-Rheinland-Pfalz,8282,658,0,4213,0
-Saarland,4149,,3122,495,0
-Sachsen,4866,523,487,3765,1
-Sachsen-Anhalt,13366,544,4391,6446,562
-Schleswig-Holstein,9557,624,2801,5317,2325
-Thüringen,810,,232,297,0
-Gesamt,265986,22892,62805,123103,7999
+Baden-Württemberg,32182,4758,15546,9828,1716
+Bayern,77876,11618,18188,38306,1554
+Berlin,19389,1631,11608,6783,105
+Brandenburg,3334,25,227,3087,20
+Bremen,2653,700,942,811,18
+Hamburg,4756,616,1704,2698,0
+Hessen,37795,4390,10329,22051,1492
+Mecklenburg-Vorpommern,13832,1773,242,7738,29
+Niedersachsen,8665,3271,1791,4198,1915
+Nordrhein-Westfalen,62692,4435,0,25744,0
+Rheinland-Pfalz,9891,1609,0,5435,0
+Saarland,4836,687,3655,584,0
+Sachsen,7740,2874,662,6354,1
+Sachsen-Anhalt,15628,2262,4967,7523,649
+Schleswig-Holstein,12978,3421,3427,6611,2716
+Thüringen,2715,493,446,1976,1
+Gesamt,316962,44563,73734,149727,10216
