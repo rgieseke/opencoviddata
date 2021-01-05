@@ -1,30 +1,35 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-03 13:38:22
+# Abfragezeitpunkt: 2021-01-05 08:48:41
 # 
 # Erläuterung
-# Gemeldete Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation
-# Datenstand: 28.12.2020, 08:00 Uhr =TODAY() 08:00 Uhr
+# Datenstand: 28.12.2020, 08:00 Uhr =TODAY() 12:00 Uhr
+# Gemeldete Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation (03.01.21)
 # Die kumulative Zahl der Impfungen umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI. 
+# Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
+# Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
 # Achtung: Die Differenz zum Vortag kann Nachmeldungen aus vorangegangenen Tagen enthalten und spiegelt nicht immer die innerhalb des Vortags tatsächlich durchgeführte Zahl der Impfungen wider. 
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
+# Gemeldete Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
+# Diese Zahl umfasst die mit jeweiligem Datenstand gemeldeten Impfungen an das RKI.
+# Anmerkung zu den Indikationen: es können mehrere Indikationen je geimpfter Person vorliegen
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
-Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*,Pflegeheim-bewohnerIn*
-Baden-Württemberg,24063,4014,11041,7428,1382,4200
-Bayern,57833,11742,12855,25636,1091,20428
-Berlin,14616,1443,9817,3647,105,10968
-Brandenburg,3219,,204,2995,20,224
-Bremen,1837,96,824,465,9,265
-Hamburg,3704,662,1439,2010,,1696
-Hessen,30085,5294,8443,17635,1096,11569
-Mecklenburg-Vorpommern,11494,,178,6583,8,4804
-Niedersachsen,4962,1017,912,2641,982,2918
-Nordrhein-Westfalen,48691,13142,,18806,,29893
-Rheinland-Pfalz,7248,59,,3516,,3732
-Saarland,4149,833,3122,495,,1580
-Sachsen,4343,343,368,3535,1,807
-Sachsen-Anhalt,12822,1051,4237,6194,546,6410
-Schleswig-Holstein,8933,969,2525,5136,2077,3987
-Thüringen,810,,232,297,,413
-Gesamt,238809,40665,56197,107019,7317,103894
+Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*
+Baden-Württemberg,27454,3390,12584,8739,1469
+Bayern,66258,8425,15480,31755,1280
+Berlin,17758,935,10507,6132,105
+Brandenburg,3309,,204,3085,20
+Bremen,1903,66,824,506,9
+Hamburg,4140,436,1616,2189,0
+Hessen,33405,3320,9387,19405,1185
+Mecklenburg-Vorpommern,11494,,178,6583,8
+Niedersachsen,5394,432,992,2822,1035
+Nordrhein-Westfalen,53841,3539,0,21354,0
+Rheinland-Pfalz,8282,658,0,4213,0
+Saarland,4149,,3122,495,0
+Sachsen,4866,523,487,3765,1
+Sachsen-Anhalt,13366,544,4391,6446,562
+Schleswig-Holstein,9557,624,2801,5317,2325
+Thüringen,810,,232,297,0
+Gesamt,265986,22892,62805,123103,7999
