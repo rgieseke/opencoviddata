@@ -1,7 +1,7 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-07 16:28:27
+# Abfragezeitpunkt: 2021-01-07 22:39:34
 # 
 # Erläuterung
 # Datenstand: 07.01.2021, 11:00 Uhr
@@ -15,21 +15,21 @@
 #  
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 # RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
-RS,Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*
-8,Baden-Württemberg,42899,4971,22030,12661
-9,Bayern,84349,1600,19266,41737
-11,Berlin,24159,2204,15037,8402
-12,Brandenburg,8182,2778,436,7724
-4,Bremen,3825,630,1018,1397
-2,Hamburg,7079,1178,2415,3561
-6,Hessen,44122,2824,11916,25931
-13,Mecklenburg-Vorpommern,21713,2359,811,11746
-3,Niedersachsen,22608,7444,5209,10900
-5,Nordrhein-Westfalen,79578,8851,,33961
-7,Rheinland-Pfalz,15984,3648,,9796
-10,Saarland,6511,878,4940,813
-14,Sachsen,13006,2239,858,11072
-15,Sachsen-Anhalt,17624,501,5569,8461
-1,Schleswig-Holstein,20078,3062,4842,9282
-16,Thüringen,5343,1165,650,4096
-16,Gesamt,417060,46332,94997,201540
+RS,Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*,PflegeheimbewohnerIn*
+8,Baden-Württemberg,42899,4971,22030,12661,2303,7340
+9,Bayern,84349,1600,19266,41737,1595,28908
+11,Berlin,24159,2204,15037,8402,105,15272
+12,Brandenburg,8182,2778,436,7724,21,433
+4,Bremen,3825,630,1018,1397,31,1182
+2,Hamburg,7079,1178,2415,3561,86,2271
+6,Hessen,44122,2824,11916,25931,1853,16780
+13,Mecklenburg-Vorpommern,21713,2359,811,11746,46,9712
+3,Niedersachsen,22608,7444,5209,10900,4698,13321
+5,Nordrhein-Westfalen,79578,8851,,33961,,45625
+7,Rheinland-Pfalz,15984,3648,,9796,,6188
+10,Saarland,6511,878,4940,813,,2430
+14,Sachsen,13006,2239,858,11072,1,1933
+15,Sachsen-Anhalt,17624,501,5569,8461,738,8818
+1,Schleswig-Holstein,20078,3062,4842,9282,3234,7768
+16,Thüringen,5343,1165,650,4096,21,583
+16,Gesamt,417060,46332,94997,201540,14732,168564
