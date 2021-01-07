@@ -1,12 +1,12 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-06 14:36:05
+# Abfragezeitpunkt: 2021-01-07 16:28:27
 # 
 # Erläuterung
-# Datenstand: 06.01.2021, 11:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich zum 05.01.21 (Impfungen_bis_einschl_05.01.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 05.01.21 durchgeführt und bis zum 06.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 07.01.2021, 11:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich 06.01.21 (Impfungen_bis_einschl_06.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 06.01.21 durchgeführt und bis zum 07.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
@@ -14,21 +14,22 @@
 # In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
 #  
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
-Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*
-Baden-Württemberg,37840,5621,18907,11336,2023
-Bayern,82749,4873,18957,40959,1573
-Berlin,21955,2566,13487,7648,105
-Brandenburg,5404,2070,287,5097,20
-Bremen,3195,518,982,1062,29
-Hamburg,5901,1145,1996,3495,44
-Hessen,41298,3503,11393,23963,1657
-Mecklenburg-Vorpommern,18014,2570,456,10024,27
-Niedersachsen,15164,6499,3341,7376,3112
-Nordrhein-Westfalen,69225,4160,,28846,
-Rheinland-Pfalz,12336,2445,,7191,
-Saarland,5633,797,4279,672,
-Sachsen,10767,3027,820,8945,1
-Sachsen-Anhalt,17123,1495,5402,8196,738
-Schleswig-Holstein,17016,3444,4092,8459,2932
-Thüringen,3711,500,468,2856,7
-Gesamt,367331,45233,84867,176125,12268
+# RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
+RS,Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*
+8,Baden-Württemberg,42899,4971,22030,12661
+9,Bayern,84349,1600,19266,41737
+11,Berlin,24159,2204,15037,8402
+12,Brandenburg,8182,2778,436,7724
+4,Bremen,3825,630,1018,1397
+2,Hamburg,7079,1178,2415,3561
+6,Hessen,44122,2824,11916,25931
+13,Mecklenburg-Vorpommern,21713,2359,811,11746
+3,Niedersachsen,22608,7444,5209,10900
+5,Nordrhein-Westfalen,79578,8851,,33961
+7,Rheinland-Pfalz,15984,3648,,9796
+10,Saarland,6511,878,4940,813
+14,Sachsen,13006,2239,858,11072
+15,Sachsen-Anhalt,17624,501,5569,8461
+1,Schleswig-Holstein,20078,3062,4842,9282
+16,Thüringen,5343,1165,650,4096
+16,Gesamt,417060,46332,94997,201540

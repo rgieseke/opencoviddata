@@ -38,7 +38,7 @@ for row in notes:
     if len(row) > 0:
         meta += [" ".join(row)]
 
-df = pd.read_excel(excel_file, sheet_name=1, usecols="A:G", nrows=17, index_col=0)
+df = pd.read_excel(excel_file, sheet_name=1, usecols="A:G", nrows=17, index_col=[0, 1])
 df = df.drop("Impfungen pro 1.000 Einwohner", axis=1)
 df = df.astype("Int64")
 df = df.rename(columns={"Pflegeheim-bewohnerIn": "PflegeheimbewohnerIn"})
