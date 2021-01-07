@@ -2,10 +2,10 @@ from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
+import pytz
 from zeep import Client
 
 from mappings import state_ids
-
 
 root = Path(__file__).parents[1]
 
@@ -78,7 +78,7 @@ def fetch_state(state):
     df = df.drop("Gesamt", axis=1)
 
     header = f"""# Quelle: Robert Koch-Institut, SurvStat@RKI 2.0, https://survstat.rki.de
-# Abfragezeitpunkt: { datetime.now().strftime("%Y-%m-%d %H:%M:%S") }
+# Abfragezeitpunkt: { datetime.now(pytz.timezone('Europe/Berlin')).strftime("%Y-%m-%d %H:%M:%S") }
 # API-Download für Covid19-Fälle in {state}, letzte KW ggf. noch nicht vollständig
 """
     with open(root / f"data/survstat-covid19-cases-{ state.lower()}.csv", "w") as f:
