@@ -1,12 +1,12 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-14 15:48:54
+# Abfragezeitpunkt: 2021-01-15 15:48:11
 # 
 # Erläuterung
-# Datenstand: 14.01.2021, 11:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich 13.01.21 (Impfungen_bis_einschl_13.01.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 13.01.21 durchgeführt und bis zum 14.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 15.01.2021, 11:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich 14.01.21 (Impfungen_bis_einschl_14.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 14.01.21 durchgeführt und bis zum 15.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
@@ -16,20 +16,20 @@
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 # RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
 RS,Bundesland,Impfungen kumulativ,Differenz zum Vortag,Indikation nach Alter*,Berufliche Indikation*,Medizinische Indikation*,PflegeheimbewohnerIn*
-8,Baden-Württemberg,82300,5538,44631,24154,3032,13719
-9,Bayern,167915,17404,40128,84910,2880,53456
-11,Berlin,38408,2515,26527,11540,105,22520
-12,Brandenburg,27102,7512,5612,21079,212,2545
-4,Bremen,8890,1137,1181,4066,88,3420
-2,Hamburg,18150,2129,6274,8161,1729,4195
-6,Hessen,62171,1827,16135,35893,3338,24013
-13,Mecklenburg-Vorpommern,32998,2284,2516,16644,552,14696
-3,Niedersachsen,70444,6679,14524,36884,11194,36307
-5,Nordrhein-Westfalen,142066,9594,,66156,,75918
-7,Rheinland-Pfalz,54189,8109,14321,25773,10,14084
-10,Saarland,12243,1046,9064,2024,,4124
-14,Sachsen,34588,5167,2528,27920,1,6667
-15,Sachsen-Anhalt,29448,2128,9342,14226,1274,13632
-1,Schleswig-Holstein,47498,4303,14059,18157,5452,18099
-16,Thüringen,14045,744,1150,10998,82,1491
-16,Gesamt,842455,78116,207992,408585,29949,308886
+8,Baden-Württemberg,92868,6872,49161,26901,3175,17614
+9,Bayern,183573,15658,44096,93673,3143,57247
+11,Berlin,45998,2196,28323,17386,105,23282
+12,Brandenburg,33263,5694,7410,25370,268,3545
+4,Bremen,10134,1099,1197,4786,89,3927
+2,Hamburg,19422,1272,6851,8250,2263,4486
+6,Hessen,65673,3502,17201,37398,3700,25588
+13,Mecklenburg-Vorpommern,35355,2357,2976,17272,591,15315
+3,Niedersachsen,78050,6442,15628,40754,11732,35319
+5,Nordrhein-Westfalen,176801,25600,0,84253,0,92556
+7,Rheinland-Pfalz,64219,9154,17781,30548,16,15874
+10,Saarland,13301,1052,9796,2256,0,4461
+14,Sachsen,39332,4744,3005,31443,1,7888
+15,Sachsen-Anhalt,31723,2275,10103,15590,1311,14302
+1,Schleswig-Holstein,52740,4677,14965,19722,5453,18214
+16,Thüringen,19230,2060,3428,13211,248,2150
+16,Gesamt,961682,94654,231921,468813,32095,341768
