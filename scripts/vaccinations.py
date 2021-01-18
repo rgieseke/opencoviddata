@@ -38,20 +38,65 @@ for row in notes:
     if len(row) > 0:
         meta += [" ".join(row)]
 
-df = pd.read_excel(excel_file, sheet_name=1, usecols="A:I", nrows=17, index_col=[0, 1])
-df = df.drop("Impfungen pro 1.000 Einwohner", axis=1)
-df = df.astype("Int64")
-df = df.rename(columns={"Pflegeheim-bewohnerIn*": "PflegeheimbewohnerIn*"})
+df = pd.read_excel(
+    excel_file, sheet_name=1, usecols="A:F,H:I", skiprows=3, nrows=17, header=None
+)
+df.columns = [
+    "RS",
+    "Bundesland",
+    "Erstimpfungen kumulativ Gesamt",
+    "BioNTech",
+    "Moderna",
+    "Differenz zum Vortag",
+    "Zweitimpfungen kumulativ Gesamt",
+    "Differenz zum Vortag",
+]
+df["RS"] = [f"{i:02d}" if not pd.isnull(i) else "" for i in df["RS"].astype("Int64")]
+df = df.set_index(["RS", "Bundesland"])
 
 footnotes = wb[wb.sheetnames[1]]
-for row in list(iter_rows(footnotes))[18:]:
+for row in list(iter_rows(footnotes))[21:]:
     if len(row) > 0:
         meta += [" ".join(row)]
 
 # Remove duplicates in metadata
 meta = list(dict.fromkeys(meta))
 
-with open(root / "data/vaccinations/vaccinations.csv", "w") as f:
+with open(root / "data/vaccinations/vaccinations-total.csv", "w") as f:
     for line in meta:
         f.write(f"# {line}\n")
     f.write(df.to_csv())
+
+# Indicators
+df_indication = pd.read_excel(excel_file, sheet_name=2, skiprows=1, nrows=17)
+df_indication.columns = [
+    "RS",
+    "Bundesland",
+    "Erstimpfung - Indikation nach Alter",
+    "Erstimpfung - Berufliche Indikation",
+    "Erstimpfung - Medizinische Indikation",
+    "Erstimpfung - PflegeheimbewohnerIn",
+    "Zweitimpfung - Indikation nach Alter",
+    "Zweitimpfung - Berufliche Indikation",
+    "Zweitimpfung - Medizinische Indikation",
+    "Zweitimpfung - PflegeheimbewohnerIn",
+]
+
+df_indication["RS"] = [
+    f"{i:02d}" if not pd.isnull(i) else "" for i in df_indication["RS"].astype("Int64")
+]
+df_indication = df_indication.set_index(["RS", "Bundesland"])
+df_indication = df_indication.astype("Int64")
+
+footnotes = wb[wb.sheetnames[2]]
+for row in list(iter_rows(footnotes))[20:]:
+    if len(row) > 0:
+        meta += [" ".join(row)]
+
+# Remove duplicates in metadata
+meta = list(dict.fromkeys(meta))
+
+with open(root / "data/vaccinations/vaccinations-indication.csv", "w") as f:
+    for line in meta:
+        f.write(f"# {line}\n")
+    f.write(df_indication.to_csv())

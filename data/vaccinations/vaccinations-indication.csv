@@ -1,0 +1,35 @@
+# Digitales Impfquotenmonitoring zur COVID-19-Impfung
+# CSV-Version der Excel-Datei des RKI
+# Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
+# Abfragezeitpunkt: 2021-01-18 20:07:53
+# 
+# Erläuterung
+# Datenstand: 18.01.2021, 11:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich 17.01.21 (Impfungen_bis_einschl_17.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 17.01.21 durchgeführt und bis zum 18.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
+# Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
+# Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
+# Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
+# In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
+#  
+# * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
+# RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
+RS,Bundesland,Erstimpfung - Indikation nach Alter,Erstimpfung - Berufliche Indikation,Erstimpfung - Medizinische Indikation,Erstimpfung - PflegeheimbewohnerIn,Zweitimpfung - Indikation nach Alter,Zweitimpfung - Berufliche Indikation,Zweitimpfung - Medizinische Indikation,Zweitimpfung - PflegeheimbewohnerIn
+08,Baden-Württemberg,58770,35662,3663,23375,0,0,0,0
+09,Bayern,52396,110513,3924,64585,0,0,0,0
+11,Berlin,34017,18345,105,25336,1655,280,0,1655
+12,Brandenburg,9387,28252,368,4790,0,0,0,0
+04,Bremen,1313,5751,100,4533,0,0,0,0
+02,Hamburg,9187,10969,1812,6369,189,211,0,214
+06,Hessen,18718,41377,4096,28459,733,688,34,1078
+13,Mecklenburg-Vorpommern,3452,18238,706,15987,0,0,0,0
+03,Niedersachsen,17857,45075,16913,40119,40,91,139,242
+05,Nordrhein-Westfalen,,104080,,108365,0,354,0,676
+07,Rheinland-Pfalz,24876,37867,19,20048,0,158,0,192
+10,Saarland,11626,2551,0,5560,0,0,0,0
+14,Sachsen,4303,38835,1,11166,41,50,0,105
+15,Sachsen-Anhalt,10575,16277,1372,14609,281,280,194,359
+01,Schleswig-Holstein,17562,22557,5458,18323,0,0,0,0
+16,Thüringen,5024,15020,475,2892,0,0,0,0
+,Gesamt,279063,551369,39012,394516,2939,2112,367,4521
