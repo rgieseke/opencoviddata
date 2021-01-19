@@ -39,7 +39,7 @@ for row in notes:
         meta += [" ".join(row)]
 
 df = pd.read_excel(
-    excel_file, sheet_name=1, usecols="A:F,H:I", skiprows=3, nrows=17, header=None
+    excel_file, sheet_name=1, usecols="A:B,D:G,I:J", skiprows=3, nrows=17, header=None
 )
 df.columns = [
     "RS",
@@ -68,7 +68,7 @@ with open(root / "data/vaccinations/vaccinations-total.csv", "w") as f:
     f.write(df.to_csv())
 
 # Indicators
-df_indication = pd.read_excel(excel_file, sheet_name=2, skiprows=1, nrows=17)
+df_indication = pd.read_excel(excel_file, sheet_name=2, usecols="A:J", skiprows=1, nrows=17)
 df_indication.columns = [
     "RS",
     "Bundesland",
