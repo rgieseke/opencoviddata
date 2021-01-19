@@ -1,33 +1,35 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-18 20:07:53
+# Abfragezeitpunkt: 2021-01-19 15:52:33
 # 
 # Erläuterung
-# Datenstand: 18.01.2021, 11:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich 17.01.21 (Impfungen_bis_einschl_17.01.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 17.01.21 durchgeführt und bis zum 18.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 19.01.2021, 14:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland sowie nach STIKO-Indikation bis einschließlich 18.01.21 (Impfungen_bis_einschl_18.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 18.01.21 durchgeführt und bis zum 19.01.21, 14:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
 # Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
 # In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
 #  
+# * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
+# RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
 RS,Bundesland,Erstimpfungen kumulativ Gesamt,BioNTech,Moderna,Differenz zum Vortag,Zweitimpfungen kumulativ Gesamt,Differenz zum Vortag
-08,Baden-Württemberg,114954,114954,0,5352,0,0
-09,Bayern,213837,213837,0,5296,0,0
-11,Berlin,52622,52162,460,1571,1933,1933
-12,Brandenburg,38474,38474,0,0,0,0
-04,Bremen,11845,11845,0,394,0,0
-02,Hamburg,24468,24468,0,1184,425,425
-06,Hessen,72816,72816,0,926,1736,1736
-13,Mecklenburg-Vorpommern,37564,37444,120,0,0,0
-03,Niedersachsen,90005,88766,1239,813,335,335
-05,Nordrhein-Westfalen,211779,211779,0,5728,968,906
-07,Rheinland-Pfalz,82810,81905,905,2879,350,350
-10,Saarland,15711,15711,0,250,0,0
-14,Sachsen,50002,50002,0,3019,155,155
-15,Sachsen-Anhalt,33148,33148,0,21,679,624
-01,Schleswig-Holstein,65849,65849,0,3524,0,0
-16,Thüringen,23413,23413,0,195,0,0
-,Gesamt,1139297,1136573,2724,31152,6581,6464
+08,Baden-Württemberg,122057,121737,320,7354,4457,1953.0
+09,Bayern,220318,213624,6694,6481,419,419.0
+11,Berlin,55134,54499,635,2512,4138,2205.0
+12,Brandenburg,41094,41094,0,2620,0,0.0
+04,Bremen,12866,12433,433,614,390,318.0
+02,Hamburg,26517,26362,155,1945,598,174.0
+06,Hessen,74071,74071,0,1255,3000,1264.0
+13,Mecklenburg-Vorpommern,39116,38745,371,1420,1157,1157.0
+03,Niedersachsen,94116,92738,1378,3546,837,473.0
+05,Nordrhein-Westfalen,218699,218699,0,2360,4593,1722.0
+07,Rheinland-Pfalz,91423,89129,2294,7496,1196,
+10,Saarland,16957,16957,0,1246,0,0.0
+14,Sachsen,53663,53663,0,3661,368,
+15,Sachsen-Anhalt,34411,34411,0,1263,2927,2248.0
+01,Schleswig-Holstein,69126,69076,50,3277,640,640.0
+16,Thüringen,25975,25975,0,2239,21,21.0
+,Gesamt,1195543,1183213,12330,49289,24741,12594.0
