@@ -77,8 +77,8 @@ for state in state_ids.keys():
         alt.Chart(long_data)
         .transform_calculate(Inzidenz="datum['Fälle'] / datum['Anzahl'] * 100000")
         .properties(
-            height=510,
-            width=907,
+            height=561,
+            width=998,
             title=[
                 f"7-Tages-Inzidenz von COVID-19 je Kalenderwoche nach Altersgruppen in {state}",
                 f"Datenquelle: Robert Koch-Institut, SurvStat@RKI 2.0, https://survstat.rki.de, Abfragedatum: {data_date.strftime('%d.%m.%Y')}",
