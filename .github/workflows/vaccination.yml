@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.email "<>"
           git config user.name "Update Bot"
-          git add data/vaccinations/vaccinations.csv
+          git add -u data/vaccinations
           git commit -m "Update vaccination data" && \
             git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || true
 
