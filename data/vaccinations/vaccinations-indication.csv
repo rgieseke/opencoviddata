@@ -1,15 +1,15 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-21 15:48:08
+# Abfragezeitpunkt: 2021-01-22 15:55:59
 # 
 # Digitales Impfquoten-Monitoring COVID-19 - Erläuterung
-# Datenstand: 21.01.2021, 10:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 20.01.21 (Gesamt_bis_einschl_20.01.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 20.01.21 durchgeführt und bis zum 21.01.21, 10:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 22.01.2021, 10:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 21.01.21 (Gesamt_bis_einschl_21.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 21.01.21 durchgeführt und bis zum 22.01.21, 10:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
-# Anzahl Impfungen nach Indikation bis einschließlich 20.01.21 (Indik_bis_einschl_20.01.21)
+# Anzahl Impfungen nach Indikation bis einschließlich 21.01.21 (Indik_bis_einschl_21.01.21)
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen. In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 # Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
 # In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
@@ -21,20 +21,20 @@
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen.
 # * In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 RS,Bundesland,Erstimpfung - Indikation nach Alter,Erstimpfung - Berufliche Indikation,Erstimpfung - Medizinische Indikation,Erstimpfung - PflegeheimbewohnerIn,Zweitimpfung - Indikation nach Alter,Zweitimpfung - Berufliche Indikation,Zweitimpfung - Medizinische Indikation,Zweitimpfung - PflegeheimbewohnerIn
-08,Baden-Württemberg,68463,41931,4083,26213,3673,4832,303,2525
-09,Bayern,57100,121571,4200,68388,0,4077,0,0
-11,Berlin,40253,18975,108,26718,6538,1456,28,6915
-12,Brandenburg,16170,32160,553,8143,0,1123,0,0
-04,Bremen,1562,6198,104,5215,111,434,6,502
-02,Hamburg,11220,14497,1824,7963,653,880,0,781
-06,Hessen,22690,45336,4380,30734,2801,7082,357,4868
-13,Mecklenburg-Vorpommern,5443,20683,889,18071,374,1190,17,1476
-03,Niedersachsen,21777,58773,17599,48475,254,1461,315,1369
-05,Nordrhein-Westfalen,0,116986,0,118941,0,8049,0,8004
-07,Rheinland-Pfalz,37831,43963,51,22744,0,1195,1,1167
-10,Saarland,13307,3501,0,6274,0,0,0,0
-14,Sachsen,5703,47093,1,15032,59,2390,0,161
-15,Sachsen-Anhalt,12602,18915,1750,16074,2450,4137,400,3144
-01,Schleswig-Holstein,20470,24246,5463,18434,0,0,0,0
-16,Thüringen,8915,18673,1056,4065,17,222,1,6
-,Gesamt,343506,633501,42061,441484,16930,38528,1428,30918
+08,Baden-Württemberg,72279,44447,4159,27997,5758,6263,412,3188
+09,Bayern,58457,124952,4305,69814,3075,10370,152,5087
+11,Berlin,42928,20346,108,27854,8310,2772,28,8049
+12,Brandenburg,19012,34114,645,9440,0,1123,0,0
+04,Bremen,1723,6473,107,5411,214,560,6,798
+02,Hamburg,12026,15427,1827,8599,653,1385,0,781
+06,Hessen,23878,46419,4449,31235,3709,7217,2014,6291
+13,Mecklenburg-Vorpommern,6577,21490,959,18851,382,1403,21,1806
+03,Niedersachsen,50457,21654,24117,63373,1612,709,589,1812
+05,Nordrhein-Westfalen,0,121339,0,122634,0,11031,0,10846
+07,Rheinland-Pfalz,41365,46600,54,24392,0,1587,0,1641
+10,Saarland,11756,3518,1,5385,2044,255,0,1049
+14,Sachsen,5995,48854,1,15873,120,2983,0,360
+15,Sachsen-Anhalt,13089,19508,1806,16519,3064,4658,486,3884
+01,Schleswig-Holstein,21455,24722,5463,18458,0,0,0,0
+16,Thüringen,10160,20239,1138,4293,80,868,3,95
+,Gesamt,391157,620102,49139,470128,29021,53184,3711,45687
