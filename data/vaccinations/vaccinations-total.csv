@@ -1,15 +1,15 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-25 15:48:56
+# Abfragezeitpunkt: 2021-01-26 15:29:09
 # 
 # Digitales Impfquoten-Monitoring COVID-19 - Erläuterung
-# Datenstand: 25.01.2021, 10:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 24.01.21 (Gesamt_bis_einschl_24.01.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 24.01.21 durchgeführt und bis zum 25.01.21, 10:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 26.01.2021, 10:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 25.01.21 (Gesamt_bis_einschl_25.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 25.01.21 durchgeführt und bis zum 26.01.21, 10:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
-# Anzahl Impfungen nach Indikation bis einschließlich 24.01.21 (Indik_bis_einschl_24.01.21)
+# Anzahl Impfungen nach Indikation bis einschließlich 25.01.21 (Indik_bis_einschl_25.01.21)
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen. In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 # Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
 # In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
@@ -19,20 +19,20 @@
 # Moderna seit 14.01.2021
 # RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
 RS,Bundesland,Erstimpfungen kumulativ Gesamt,BioNTech,Moderna,Differenz zum Vortag,Zweitimpfungen kumulativ Gesamt,Differenz zum Vortag
-08,Baden-Württemberg,171338,170362,976,6079,26150,3130
-09,Bayern,254916,246384,8532,4878,67418,8102
-11,Berlin,74605,73012,1593,3306,18158,953
-12,Brandenburg,58422,58422,0,0,1123,0
-04,Bremen,15583,14692,1258,486,1864,69
-02,Hamburg,36186,35876,310,674,3746,463
-06,Hessen,97061,97061,0,2903,26445,4119
-13,Mecklenburg-Vorpommern,49946,48985,961,0,3742,0
-03,Niedersachsen,130395,128491,1904,598,5419,400
-05,Nordrhein-Westfalen,290708,290708,0,12865,47123,7635
-07,Rheinland-Pfalz,121505,119199,3739,0,4188,0
-10,Saarland,17296,17016,280,0,4043,0
-14,Sachsen,71283,71094,189,1650,4599,527
-15,Sachsen-Anhalt,42149,41849,300,71,11482,621
-01,Schleswig-Holstein,83881,83572,309,1258,1531,6
-16,Thüringen,39081,39081,0,255,1732,0
-,Gesamt,1554355,1535804,20351,35023,228763,26025
+08,Baden-Württemberg,180411,178720,1691,8458,30451,3936
+09,Bayern,290683,273601,17082,10384,93628,11587
+11,Berlin,78060,76302,1758,3455,19795,1637
+12,Brandenburg,61879,61879,0,3457,1145,22
+04,Bremen,16475,15217,1258,525,2122,258
+02,Hamburg,36210,35900,310,0,4387,641
+06,Hessen,104288,104288,0,7227,29645,3200
+13,Mecklenburg-Vorpommern,51199,50137,1062,1145,5809,1909
+03,Niedersachsen,135010,133106,1904,3948,8871,3448
+05,Nordrhein-Westfalen,292154,292154,0,560,53982,3493
+07,Rheinland-Pfalz,129595,125812,3783,4867,4556,367
+10,Saarland,18072,17682,390,776,4666,623
+14,Sachsen,73723,73534,189,2440,6363,1764
+15,Sachsen-Anhalt,43795,43220,575,1646,13007,1525
+01,Schleswig-Holstein,85536,85227,309,1655,2795,1264
+16,Thüringen,41335,41335,0,2200,2042,193
+,Gesamt,1638425,1608114,30311,52743,283264,35867
