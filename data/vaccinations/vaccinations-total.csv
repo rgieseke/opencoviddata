@@ -1,15 +1,15 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-01-28 15:30:03
+# Abfragezeitpunkt: 2021-01-29 15:30:14
 # 
 # Digitales Impfquoten-Monitoring COVID-19 - Erläuterung
-# Datenstand: 28.01.2021, 10:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 27.01.21 (Gesamt_bis_einschl_27.01.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 27.01.21 durchgeführt und bis zum 28.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 29.01.2021, 10:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 28.01.21 (Gesamt_bis_einschl_28.01.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 28.01.21 durchgeführt und bis zum 29.01.21, 11:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
-# Anzahl Impfungen nach Indikation bis einschließlich 27.01.21 (Indik_bis_einschl_27.01.21)
+# Anzahl Impfungen nach Indikation bis einschließlich 28.01.21 (Indik_bis_einschl_28.01.21)
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen. In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 # Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
 # In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
@@ -19,20 +19,20 @@
 # Moderna seit 14.01.2021
 # RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
 RS,Bundesland,Erstimpfungen kumulativ Gesamt,BioNTech,Moderna,Differenz zum Vortag,Zweitimpfungen kumulativ Gesamt,Differenz zum Vortag
-08,Baden-Württemberg,198902,195512,3390,8953,43654,4829
-09,Bayern,291334,281910,9424,12681,90355,4005
-11,Berlin,84111,82034,2077,2913,24710,2269
-12,Brandenburg,67643,67643,0,1001,4978,1921
-04,Bremen,17595,16337,1258,523,3203,450
-02,Hamburg,40819,40509,310,1615,6273,939
-06,Hessen,114788,114788,0,5887,35555,2978
-13,Mecklenburg-Vorpommern,53619,52117,1502,1042,12718,2371
-03,Niedersachsen,140982,139077,1905,3488,23668,7397
-05,Nordrhein-Westfalen,312109,312109,0,2954,72095,9553
-07,Rheinland-Pfalz,136803,132998,3805,849,6174,931
-10,Saarland,19527,18929,598,692,6288,868
-14,Sachsen,79507,79141,366,2326,10518,1512
-15,Sachsen-Anhalt,46795,46220,575,1775,15735,1005
-01,Schleswig-Holstein,87351,87042,309,286,5610,1202
-16,Thüringen,46351,46351,0,2096,4547,876
-,Gesamt,1738236,1712717,25519,49081,366081,43106
+08,Baden-Württemberg,206594,202701,3893,7321,49003,5339
+09,Bayern,302792,293223,9569,11458,93015,2660
+11,Berlin,86860,84651,2209,2749,27010,2300
+12,Brandenburg,70884,70421,463,3172,8362,2836
+04,Bremen,18145,16888,1257,542,3840,636
+02,Hamburg,42646,42236,410,1214,8041,1280
+06,Hessen,119069,119069,0,4281,37816,2261
+13,Mecklenburg-Vorpommern,54907,53242,1665,1189,14387,1668
+03,Niedersachsen,143471,141566,1905,2343,32691,8535
+05,Nordrhein-Westfalen,327867,323002,4865,6875,80651,5368
+07,Rheinland-Pfalz,138322,134517,3805,969,10777,4368
+10,Saarland,20345,19638,707,818,7057,769
+14,Sachsen,82046,81400,646,2539,12054,1536
+15,Sachsen-Anhalt,48228,47653,575,1433,17014,1279
+01,Schleswig-Holstein,88467,88125,342,1116,7536,1926
+16,Thüringen,48838,48838,0,2215,7392,1117
+,Gesamt,1799481,1767170,32311,50234,416646,43878
