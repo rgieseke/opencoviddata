@@ -1,15 +1,15 @@
 # Digitales Impfquotenmonitoring zur COVID-19-Impfung
 # CSV-Version der Excel-Datei des RKI
 # Quelle: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquoten-Tab.htm
-# Abfragezeitpunkt: 2021-02-16 15:24:19
+# Abfragezeitpunkt: 2021-02-17 15:24:22
 # 
 # Digitales Impfquoten-Monitoring COVID-19 - Erläuterung
-# Datenstand: 16.02.2021, 08:00 Uhr
-# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 15.02.21 (Gesamt_bis_einschl_15.02.21)
-# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 15.02.21 durchgeführt und bis zum 16.02.21, 08:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen und Datenkorrekturen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
+# Datenstand: 17.02.2021, 10:00 Uhr
+# Durchgeführte Impfungen bundesweit und nach Bundesland bis einschließlich 16.02.21 (Gesamt_bis_einschl_16.02.21)
+# Die kumulative Zahl der Impfungen umfasst alle Impfungen, die bis einschließlich 16.02.21 durchgeführt und bis zum 17.02.21, 10:00 Uhr, dem RKI gemeldet wurden. Nachmeldungen und Datenkorrekturen aus zurückliegenden Tagen sind in der kumulativen Zahl der Impfungen enthalten. 
 # Die Impfquote ist der Anteil aller bisher Geimpften in der Gesamtbevölkerung. 
 # Für die Berechnung der Impfquote wurde der Bevölkerungsstand vom 31.12.2019 zugrunde gelegt (Quelle: Statistisches Bundesamt, https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html).
-# Anzahl Impfungen nach Indikation bis einschließlich 15.02.21 (Indik_bis_einschl_15.02.21)
+# Anzahl Impfungen nach Indikation bis einschließlich 16.02.21 (Indik_bis_einschl_16.02.21)
 # Anmerkung zu den Indikationen: Es können mehrere Indikationen je geimpfter Person vorliegen. In einigen Bundesländern werden nicht alle der in der Tabelle aufgeführten Indikationen einzeln ausgewiesen.
 # Durchgeführte Impfungen bundesweit nach Tag der Impfung (Impfungen_proTag)
 # In der Tabelle sind die für jeden Impftag an das RKI gemeldeten Impfungen dargestellt. Nachmeldungen aus zurückliegenden Tagen werden rückwirkend für den jeweiligen Impftag nachgetragen.
@@ -20,20 +20,20 @@
 # AstraZeneca seit 08.02.2021
 # RS: Regionalschlüssel eines jeden Bundeslandes (destatis, https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/beschreibung-gebietseinheiten.pdf?__blob=publicationFile).
 RS,Bundesland,Erstimpfungen kumulativ Gesamt,BioNTech,Moderna,Differenz zum Vortag,Zweitimpfungen kumulativ Gesamt,Differenz zum Vortag
-08,Baden-Württemberg,349631,333762,15658,211,3.1497170280622475,165650
-09,Bayern,482886,460430,12524,9932,3.679205152834682,247180
-11,Berlin,132204,126813,4257,1134,3.6027885066348437,78141
-12,Brandenburg,81672,77558,4114,0,3.238519635844978,58446
-04,Bremen,25430,23133,1379,918,3.7331070666263457,15162
-02,Hamburg,67681,62560,1604,3517,3.6638727884052704,36062
-06,Hessen,196696,192559,3286,851,3.128077250925561,89213
-13,Mecklenburg-Vorpommern,63400,60242,1629,1529,3.9424477252574093,34567
-03,Niedersachsen,222674,211629,5471,5574,2.785650734937215,125091
-05,Nordrhein-Westfalen,609357,565277,15572,28508,3.3952721705494127,296000
-07,Rheinland-Pfalz,152862,145188,4500,3174,3.7338940370595006,106766
-10,Saarland,34510,32156,1462,892,3.49685424977733,16970
-14,Sachsen,132582,126769,5029,784,3.255966213904765,64393
-15,Sachsen-Anhalt,69639,64578,1614,3447,3.1729347151562206,39561
-01,Schleswig-Holstein,107732,104130,1535,2067,3.710069623210905,59368
-16,Thüringen,84776,78492,3953,2331,3.973791798734214,38252
-,Gesamt,2813732,2665276,83587,64869,3.3832430862872527,1470822
+08,Baden-Württemberg,361212,344456,16447,309,3.254046658163665,172613
+09,Bayern,494480,469805,12583,12092,3.767542161035303,257615
+11,Berlin,139157,128616,4274,6267,3.792269827068659,81077
+12,Brandenburg,81989,77875,4114,0,3.251089558518145,60965
+04,Bremen,26078,23496,1520,1062,3.8282330351349527,15783
+02,Hamburg,69666,63823,1607,4236,3.7713296446128384,37359
+06,Hessen,201494,195949,3612,1933,3.2043803513950206,92078
+13,Mecklenburg-Vorpommern,64738,61160,1730,1848,4.025649540027038,36880
+03,Niedersachsen,234102,219610,5686,8806,2.928614963355721,128021
+05,Nordrhein-Westfalen,629227,578848,16255,34124,3.5059856899293766,300586
+07,Rheinland-Pfalz,155134,145409,4515,5210,3.789391199547229,113295
+10,Saarland,36043,33074,1462,1507,3.652191182982449,17672
+14,Sachsen,135382,129018,5385,979,3.3247289825983537,67234
+15,Sachsen-Anhalt,70918,65566,1614,3738,3.2312092955017855,40918
+01,Schleswig-Holstein,110702,105787,1645,3270,3.812350345567646,63157
+16,Thüringen,85742,80867,2723,2152,4.019072100677892,40690
+,Gesamt,2896064,2723359,85172,87533,3.482239426301228,1525943
