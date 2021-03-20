@@ -3,6 +3,8 @@ from pathlib import Path
 
 import pandas as pd
 import pytz
+import time
+
 from zeep import Client
 
 from mappings import state_ids
@@ -84,7 +86,7 @@ def fetch_state(state):
     with open(root / f"data/survstat-covid19-cases-{ state.lower()}.csv", "w") as f:
         f.write(header)
         f.write(df.to_csv())
-
+    time.sleep(1)
 
 if __name__ == "__main__":
     for state in state_ids.keys():
