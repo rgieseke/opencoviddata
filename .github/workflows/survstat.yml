@@ -1,7 +1,7 @@
 name: SurvStat data
 on:
   schedule:
-    - cron:  '15 5 * * *'
+    - cron:  '15 4 * * *'
 jobs:
   update:
     name: Update SurvStat data
@@ -27,7 +27,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
       - name: Update data
-        run: python scripts/fetch-state.py
+        run: |
+          python scripts/fetch-state.py
+          python scripts/fetch-county-cases.py
+          python scripts/fetch-county-incidence.py
       - name: Commit back
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
