@@ -470,5 +470,5 @@ counties = {
     "SK Würzburg": {"State": "09", "Region": "DE26", "County": "09663"},
     "SK Zweibrücken": {"State": "07", "Region": "DEB3", "County": "07320"},
     "StadtRegion Aachen": {"State": "05", "Region": "DEA2", "County": "05334"},
-    "Unbekannt": {"State": "-1", "Region": "????", "County": "?????"},
+    #"Unbekannt": {"State": "-1", "Region": "????", "County": "?????"},
 }
