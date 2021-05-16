@@ -2,6 +2,9 @@ from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
+import pytz
+import time
+
 from zeep import Client
 
 from mappings import counties
@@ -79,15 +82,17 @@ def fetch_county(county):
     df = df.drop("Gesamt", axis=1)
 
     header = f"""# Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: { datetime.now().strftime("%Y-%m-%d %H:%M:%S") }
+# Abfragezeitpunkt: { datetime.now(pytz.timezone('Europe/Berlin')).strftime("%Y-%m-%d %H:%M:%S") }
 # API-Download für Covid19-Fälle in {county}, letzte KW ggf. noch nicht vollständig
 """
     with open(
-        root / f"data/survstat-covid19-cases-{ county.lower().replace(' ', '-') }.csv",
+        root
+        / f"data/counties/survstat-covid19-cases-{ county.lower().replace(' ', '-') }.csv",
         "w",
     ) as f:
         f.write(header)
         f.write(df.to_csv())
+    time.sleep(1)
 
 
 if __name__ == "__main__":
