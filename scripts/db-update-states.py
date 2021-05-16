@@ -14,7 +14,7 @@ def create_table(db):
             "state": str,
             "calendarweek": str,
             "agegroup": str,
-            "count": int,
+            "cases": int,
             "incidence": float
         },
         pk=("id", "calendarweek", "agegroup")
@@ -60,7 +60,7 @@ for state, idx in state_ids.items():
     def calc_incidence(row):
       if row["agegroup"] == "Unbekannt":
           return None
-      return (row["count"] / pop_state_grouped.loc[row["agegroup"]].Anzahl * 100_000).round(2)
+      return (row["cases"] / pop_state_grouped.loc[row["agegroup"]].Anzahl * 100_000).round(2)
 
 
     filename = f"data/states/survstat-covid19-cases-{ state.lower()}.csv"
@@ -76,7 +76,7 @@ for state, idx in state_ids.items():
     else:  # Skip on-going week.
         df = df.iloc[:-2]
 
-    df_long = df.reset_index().melt(id_vars="KW", var_name="agegroup", value_name="count")
+    df_long = df.reset_index().melt(id_vars="KW", var_name="agegroup", value_name="cases")
     df_long = df_long.rename(columns={"KW": "calendarweek"})
     df_long["state"] = state
     df_long["id"] = idx
