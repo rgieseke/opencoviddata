@@ -63,7 +63,7 @@ for state, idx in state_ids.items():
       return (row["count"] / pop_state_grouped.loc[row["agegroup"]].Anzahl * 100_000).round(2)
 
 
-    filename = f"data/survstat-covid19-cases-{ state.lower()}.csv"
+    filename = f"data/states/survstat-covid19-cases-{ state.lower()}.csv"
     print(idx, filename)
     with open(root / filename, "r") as f:
         df = pd.read_csv(f, comment="#", index_col=0)

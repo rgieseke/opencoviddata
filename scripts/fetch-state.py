@@ -83,7 +83,7 @@ def fetch_state(state):
 # Abfragezeitpunkt: { datetime.now(pytz.timezone('Europe/Berlin')).strftime("%Y-%m-%d %H:%M:%S") }
 # API-Download für Covid19-Fälle in {state}, letzte KW ggf. noch nicht vollständig
 """
-    with open(root / f"data/survstat-covid19-cases-{ state.lower()}.csv", "w") as f:
+    with open(root / f"data/states/survstat-covid19-cases-{ state.lower()}.csv", "w") as f:
         f.write(header)
         f.write(df.to_csv())
     time.sleep(1)
