@@ -1,0 +1,8 @@
+title: Datasette of COVID19 data
+license: |
+  Die Verwendung von Daten aus der SurvStat@RKI 2.0-Anwendung ist außer zu werblichen Zwecken gestattet, jedoch nur unter Quellenangabe.
+  Vorgeschlagene Zitierweise:
+  »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de, Abfragedatum: **.**.2021«
+license_url: https://survstat.rki.de
+source: RKI SurvStat Covid19 Data
+source_url: https://survstat.rki.de
