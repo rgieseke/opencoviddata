@@ -26,9 +26,19 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
-      - name: Update data
+      - name: Update state data
+        run: python scripts/fetch-state.py
+      - name: Commit back
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/fetch-state.py
+          git config user.email "<>"
+          git config user.name "Update Bot"
+          git add data/states/survstat*.csv
+          git commit -m "Auto-update SurvStat data for states" && \
+            git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || true
+      - name: Update county data
+        run: |
           python scripts/fetch-county-cases.py
           python scripts/fetch-county-incidence.py
       - name: Commit back
@@ -37,7 +47,8 @@ jobs:
         run: |
           git config user.email "<>"
           git config user.name "Update Bot"
-          git add data/survstat*.csv
-          git commit -m "Auto-update SurvStat data" && \
+          git add data/counties/survstat*.csv
+          git commit -m "Auto-update SurvStat data for counties" && \
             git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || true
+
 
