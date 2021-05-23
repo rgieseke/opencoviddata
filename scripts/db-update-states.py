@@ -28,9 +28,11 @@ db_name = "coronadata.db"
 
 db = sqlite_utils.Database(db_name)
 
-if 'survstat_states' not in db.table_names():
-    print("Creating table")
-    create_table(db)
+if 'survstat_states' in db.table_names():
+    print("Recreating table")
+    db['survstat_states'].drop()
+
+create_table(db)
 
 population = pd.read_csv(
         root / "data/12411-0012_flat.csv", encoding="ISO8859", delimiter=";"
