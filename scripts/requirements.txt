@@ -1,3 +1,4 @@
 pandas
 zeep
 pyyaml
+sqlite-utils
