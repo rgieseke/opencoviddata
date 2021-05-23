@@ -30,10 +30,13 @@ db_name = "coronadata.db"
 
 db = sqlite_utils.Database(db_name)
 
-if 'survstat_counties' not in db.table_names():
-    print("Creating table")
-    create_table(db)
+if 'survstat_counties' in db.table_names():
+    print("Recreating table")
+    db['survstat_counties'].drop()
 
+create_table(db)
+
+df_counties = []
 
 for county_name, county_values in counties.items():
 
@@ -56,8 +59,7 @@ for county_name, county_values in counties.items():
     df_cases_long["county"] = county_name
     df_cases_long["state_id"] = county_values["State"]
 
-    db["survstat_counties"].upsert_all(
-        df_cases_long.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup"))
+    df_cases_long = df_cases_long.set_index(["id", "county", "state_id", "calendarweek", "agegroup"])
 
 
     filename = f"data/counties/survstat-covid19-incidence-{ county_name.lower().replace(' ', '-') }.csv"
@@ -77,8 +79,14 @@ for county_name, county_values in counties.items():
     df_incidence_long = df_incidence.reset_index().melt(id_vars="KW", var_name="agegroup", value_name="incidence")
     df_incidence_long = df_incidence_long.rename(columns={"KW": "calendarweek"})
     df_incidence_long["id"] = county_values["County"]
-    df_cases_long["county"] = county_name
+    df_incidence_long["county"] = county_name
     df_incidence_long["state_id"] = county_values["State"]
 
-    db["survstat_counties"].upsert_all(
-        df_incidence_long.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup"))
+    df_incidence_long = df_incidence_long.set_index(["id", "county", "state_id", "calendarweek", "agegroup"])
+
+    df_counties.append(df_cases_long.join(df_incidence_long))
+
+df_counties = pd.concat(df_counties).reset_index()
+
+db["survstat_counties"].insert_all(
+        df_counties.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup"))
