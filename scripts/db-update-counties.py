@@ -97,8 +97,9 @@ for county_name, county_values in counties.items():
 
 df_counties = pd.concat(df_counties).reset_index()
 
-# db["survstat_counties"].insert_all(
-#        df_counties.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup"))
+db["survstat_counties"].insert_all(
+    df_counties.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup")
+)
 
 # Calculate population shares of agegroups from cases and incidence numbers.
 # Some testing showed no changes in data population between 2020/2021,
