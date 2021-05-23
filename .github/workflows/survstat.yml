@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.email "<>"
           git config user.name "Update Bot"
-          git add data/counties/survstat*.csv
+          git add metadata.yaml
           git commit -m "Auto-update metadata" && \
             git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || true
 

@@ -9,7 +9,6 @@ with open(root / filename, "r") as f:
     f.readline()
     date = f.readline().split("Abfragezeitpunkt: ")[1].split(" ")[0]
 
-print(date)
 data_source = f"Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de, Abfragedatum: {date}"
 print(data_source)
 
