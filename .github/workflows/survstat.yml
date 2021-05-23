@@ -1,7 +1,7 @@
 name: SurvStat data
 on:
   schedule:
-    - cron:  '15 4 * * *'
+    - cron:  '20 3 * * *'
 jobs:
   update:
     name: Update SurvStat data
