@@ -74,14 +74,6 @@ for state, idx in state_ids.items():
     with open(root / filename, "r") as f:
         df = pd.read_csv(f, comment="#", index_col=0)
 
-    current_week_day = pd.Timestamp.now().day_of_week
-    # Keep past weeks from Tuesday once two days updates for the past
-    # week are included.
-    if current_week_day >= 2:
-        df = df.iloc[:-1]
-    else:  # Skip on-going week.
-        df = df.iloc[:-2]
-
     df_long = df.reset_index().melt(
         id_vars="KW", var_name="agegroup", value_name="cases"
     )

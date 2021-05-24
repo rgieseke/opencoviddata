@@ -47,14 +47,6 @@ for county_name, county_values in counties.items():
     with open(root / filename, "r") as f:
         df_cases = pd.read_csv(f, comment="#", index_col=0)
 
-    current_week_day = pd.Timestamp.now().day_of_week
-    # Keep past weeks from Tuesday once two days updates for the past
-    # week are included.
-    if current_week_day >= 2:
-        df_cases = df_cases.iloc[:-1]
-    else:  # Skip on-going week.
-        df_cases = df_cases.iloc[:-2]
-
     df_cases_long = df_cases.reset_index().melt(
         id_vars="KW", var_name="agegroup", value_name="cases"
     )
