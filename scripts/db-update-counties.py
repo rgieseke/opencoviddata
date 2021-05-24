@@ -103,26 +103,27 @@ db["survstat_counties"].insert_all(
 
 # Calculate population shares of agegroups from cases and incidence numbers.
 # Some testing showed no changes in data population between 2020/2021,
-# thus using the maximum of cases per age group.
-if "population_counties" not in db.table_names():
-    print("Creating population table")
-    db["population_counties"].create(
-        {"id": str, "county": str, "agegroup": str, "population": int},
-        pk=("id", "county", "agegroup"),
-    )
-    db["population_counties"].create_index(["id"])
-    db["population_counties"].create_index(["county"])
-    db["population_counties"].create_index(["agegroup"])
+# using the maximum of cases per age group for calculation.
+if "population_counties" in db.table_names():
+    db["population_counties"].drop()
 
-    grouped = df_counties.groupby(["id", "county", "agegroup"]).max("cases")
-    # As we are only interested in approximate numbers, round up to 100
-    grouped["population"] = (
-        grouped.apply(lambda x: x.cases / x.incidence * 100_000, axis=1).round() / 100
-    ).round() * 100
+print("Creating population table")
+db["population_counties"].create(
+    {"id": str, "county": str, "agegroup": str, "population": int},
+    pk=("id", "county", "agegroup"),
+)
+db["population_counties"].create_index(["id"])
+db["population_counties"].create_index(["county"])
+db["population_counties"].create_index(["agegroup"])
 
-    population = grouped.reset_index()[["id", "county", "agegroup", "population"]]
-    population = population.dropna()
+grouped = df_counties.groupby(["id", "county", "agegroup"]).max("cases")
+grouped["population"] = grouped.apply(
+    lambda x: x.cases / x.incidence * 100_000, axis=1
+).round()
 
-    db["population_counties"].insert_all(
-        population.to_dict(orient="records"), pk=("id", "county", "agegroup")
-    )
+population = grouped.reset_index()[["id", "county", "agegroup", "population"]]
+population = population.dropna()
+
+db["population_counties"].insert_all(
+    population.to_dict(orient="records"), pk=("id", "county", "agegroup")
+)
