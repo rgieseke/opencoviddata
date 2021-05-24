@@ -7,6 +7,7 @@ from mappings import state_ids
 
 root = Path(__file__).parents[1]
 
+
 def create_table(db):
     db["survstat_states"].create(
         {
@@ -15,28 +16,30 @@ def create_table(db):
             "calendarweek": str,
             "agegroup": str,
             "cases": int,
-            "incidence": float
+            "incidence": float,
         },
-        pk=("id", "calendarweek", "agegroup")
+        pk=("id", "calendarweek", "agegroup"),
     )
     db["survstat_states"].create_index(["id"])
     db["survstat_states"].create_index(["state"])
     db["survstat_states"].create_index(["calendarweek"])
     db["survstat_states"].create_index(["agegroup"])
 
+
 db_name = "coronadata.db"
 
 db = sqlite_utils.Database(db_name)
 
-if 'survstat_states' in db.table_names():
+if "survstat_states" in db.table_names():
     print("Recreating table")
-    db['survstat_states'].drop()
+    db["survstat_states"].drop()
 
 create_table(db)
 
 population = pd.read_csv(
-        root / "data/12411-0012_flat.csv", encoding="ISO8859", delimiter=";"
-    )
+    root / "data/12411-0012_flat.csv", encoding="ISO8859", delimiter=";"
+)
+population_table = []
 
 for state, idx in state_ids.items():
 
@@ -60,10 +63,11 @@ for state, idx in state_ids.items():
     pop_state_grouped = pop_state_grouped.groupby("Alter").sum()
 
     def calc_incidence(row):
-      if row["agegroup"] == "Unbekannt":
-          return None
-      return (row["cases"] / pop_state_grouped.loc[row["agegroup"]].Anzahl * 100_000).round(2)
-
+        if row["agegroup"] == "Unbekannt":
+            return None
+        return (
+            row["cases"] / pop_state_grouped.loc[row["agegroup"]].Anzahl * 100_000
+        ).round(2)
 
     filename = f"data/states/survstat-covid19-cases-{ state.lower()}.csv"
     print(idx, filename)
@@ -78,11 +82,38 @@ for state, idx in state_ids.items():
     else:  # Skip on-going week.
         df = df.iloc[:-2]
 
-    df_long = df.reset_index().melt(id_vars="KW", var_name="agegroup", value_name="cases")
+    df_long = df.reset_index().melt(
+        id_vars="KW", var_name="agegroup", value_name="cases"
+    )
     df_long = df_long.rename(columns={"KW": "calendarweek"})
     df_long["state"] = state
     df_long["id"] = idx
-    df_long['incidence'] = df_long.apply(calc_incidence, axis=1)
+    df_long["incidence"] = df_long.apply(calc_incidence, axis=1)
 
-    db["survstat_states"].upsert_all(
-        df_long.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup"))
+    pop_state_grouped = pop_state_grouped.reset_index()
+    pop_state_grouped = pop_state_grouped.rename(
+        columns={"Alter": "agegroup", "Anzahl": "population"}
+    )
+    pop_state_grouped["id"] = state_ids[state]
+    pop_state_grouped["state"] = state
+    population_table.append(pop_state_grouped)
+
+    db["survstat_states"].insert_all(
+        df_long.to_dict(orient="records"), pk=("id", "calendarweek", "agegroup")
+    )
+
+population_table = pd.concat(population_table)
+if "population_states" in db.table_names():
+    db["population_states"].drop()
+
+print("Creating population table")
+db["population_states"].create(
+    {"id": str, "state": str, "agegroup": str, "population": int},
+    pk=("id", "state", "agegroup"),
+)
+db["population_states"].create_index(["id"])
+db["population_states"].create_index(["state"])
+db["population_states"].create_index(["agegroup"])
+db["population_states"].insert_all(
+    population_table.to_dict(orient="records"), pk=("id", "state", "agegroup")
+)
