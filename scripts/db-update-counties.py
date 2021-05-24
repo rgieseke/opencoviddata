@@ -65,14 +65,6 @@ for county_name, county_values in counties.items():
     with open(root / filename, "r") as f:
         df_incidence = pd.read_csv(f, comment="#", index_col=0)
 
-    current_week_day = pd.Timestamp.now().day_of_week
-    # Keep past weeks from Tuesday once two days updates for the past
-    # week are included.
-    if current_week_day >= 2:
-        df_incidence = df_incidence.iloc[:-1]
-    else:  # Skip on-going week.
-        df_incidence = df_incidence.iloc[:-2]
-
     df_incidence_long = df_incidence.reset_index().melt(
         id_vars="KW", var_name="agegroup", value_name="incidence"
     )
