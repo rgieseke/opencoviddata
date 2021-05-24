@@ -12,7 +12,7 @@ serve:
 update_db:
 	./venv/bin/python scripts/db-update-states.py
 	./venv/bin/python scripts/db-update-counties.py
-	./venv/bin/python scripts/db-update-update-metadata.py
+	./venv/bin/python scripts/db-update-metadata.py
 
 venv: scripts/requirements.txt
 	[ -d ./venv ] || python3 -m venv venv
