@@ -1,5 +1,5 @@
 # Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: 2021-08-25 05:46:34
+# Abfragezeitpunkt: 2021-08-26 05:46:38
 # API-Download für Covid19-Inzidenzen in LK Hildburghausen, letzte KW ggf. noch nicht vollständig
 KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..49,A50..54,A55..59,A60..64,A65..69,A70..74,A75..79,A80+,Unbekannt
 2020-KW12,,,,,,,,,26.69,,,,,,,,,
@@ -74,3 +74,4 @@ KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..
 2021-KW31,,,,,142.05,,51.6,,26.69,24.9,,16.69,,,67.39,31.03,,
 2021-KW32,,,,,47.35,,25.8,23.55,,,,,,,33.69,,,
 2021-KW33,,,,79.21,,,,,,,,,,,,,,
+2021-KW34,,,,79.21,47.35,42.61,,,,,,,,,,,,
