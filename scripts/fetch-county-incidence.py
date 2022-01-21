@@ -61,6 +61,7 @@ def fetch_county_incidence(county):
                             [
                                 "[ReportingDate].[WeekYear].&[2020]",
                                 "[ReportingDate].[WeekYear].&[2021]",
+                                "[ReportingDate].[WeekYear].&[2022]",
                             ]
                         ),
                     },
