@@ -8,12 +8,6 @@ Downloaded via
 
 https://tools.rki.de/SurvStat/SurvStatWebService.svc
 
-## RKI Test numbers, capacities and backlog
-
-[CSV file](data/test-numbers.csv) of the Excel file available at
-
-https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Testzahl.html
-
 ## Licenses
 
 ### Data
