@@ -1,5 +1,5 @@
 # Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: 2023-07-15 08:50:31
+# Abfragezeitpunkt: 2023-07-16 08:50:44
 # API-Download für Covid19-Inzidenzen in LK Westerwaldkreis, letzte KW ggf. noch nicht vollständig
 KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..49,A50..54,A55..59,A60..64,A65..69,A70..74,A75..79,A80+,Unbekannt
 2020-KW11,,,,,,9.19,7.89,24.53,24.86,16.46,18.21,21.62,6.39,31.39,,,,
@@ -174,3 +174,4 @@ KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..
 2023-KW24,,,10.65,,10.15,9.19,,,,,,,,,9.62,,,
 2023-KW25,10.26,,,,,,,,,,,5.41,6.39,,,,,
 2023-KW27,,,10.65,,,,,,,,,,,,,,7.05,
+2023-KW28,,,,,,,,,,,,,,,,13.94,,
