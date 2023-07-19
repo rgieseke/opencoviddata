@@ -1,5 +1,5 @@
 # Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: 2023-07-18 08:45:30
+# Abfragezeitpunkt: 2023-07-19 08:44:05
 # API-Download für Covid19-Inzidenzen in LK Main-Tauber-Kreis, letzte KW ggf. noch nicht vollständig
 KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..49,A50..54,A55..59,A60..64,A65..69,A70..74,A75..79,A80+,Unbekannt
 2020-KW10,15.98,,50.87,30.91,,,12.5,12.66,25.84,89.63,39.63,,,,13.58,,,
@@ -171,3 +171,4 @@ KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..
 2023-KW25,,,,,,,,,,,,,,,,,10.01,
 2023-KW27,,,,,,,,,,,9.91,,,,,,,
 2023-KW28,,,,,,,,,,,,,9.63,,,,,
+2023-KW29,,,,,,,,,,,,,,11.48,,20.25,,
