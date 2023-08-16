@@ -1,5 +1,5 @@
 # Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: 2023-08-15 08:48:57
+# Abfragezeitpunkt: 2023-08-16 08:56:17
 # API-Download für Covid19-Inzidenzen in SK Weiden i.d.OPf., letzte KW ggf. noch nicht vollständig
 KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..49,A50..54,A55..59,A60..64,A65..69,A70..74,A75..79,A80+,Unbekannt
 2020-KW11,,,,,,106.1,35.3,,,41.17,31.02,,,,,,,
@@ -164,3 +164,4 @@ KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..
 2023-KW22,,,,,37.62,,,,,,,,,,,56.63,,
 2023-KW30,,,,,,,,,,,,28.87,,,,,29.54,
 2023-KW31,,,,,,35.37,,,,,,,,,44.48,,,
+2023-KW33,,,,,,,,,,,,,32.76,,,,,
