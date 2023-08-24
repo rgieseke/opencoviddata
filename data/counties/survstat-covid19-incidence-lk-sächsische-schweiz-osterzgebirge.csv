@@ -1,5 +1,5 @@
 # Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: 2023-08-23 09:57:32
+# Abfragezeitpunkt: 2023-08-24 08:46:36
 # API-Download für Covid19-Inzidenzen in LK Sächsische Schweiz-Osterzgebirge, letzte KW ggf. noch nicht vollständig
 KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..49,A50..54,A55..59,A60..64,A65..69,A70..74,A75..79,A80+,Unbekannt
 2020-KW10,,,,,,,,,,,,,,5.53,,,,
@@ -178,3 +178,4 @@ KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..
 2023-KW31,,8.18,,,,,,,,,,,10.63,,,7.86,,
 2023-KW32,,,,,12.66,,7.59,13.04,12.59,,,9.66,5.32,,7.05,15.71,,
 2023-KW33,,,,18.63,,,7.59,6.52,,,5.67,9.66,,,7.05,7.86,12.77,
+2023-KW34,,,,,,,,6.52,,6.95,5.67,,,5.53,,,4.26,
