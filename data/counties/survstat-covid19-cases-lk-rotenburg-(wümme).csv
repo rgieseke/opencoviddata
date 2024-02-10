@@ -1,5 +1,5 @@
 # Quelle: »Robert Koch-Institut: SurvStat@RKI 2.0, https://survstat.rki.de«
-# Abfragezeitpunkt: 2024-02-09 07:33:56
+# Abfragezeitpunkt: 2024-02-10 07:31:51
 # API-Download für Covid19-Fälle in LK Rotenburg (Wümme), letzte KW ggf. noch nicht vollständig
 KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..49,A50..54,A55..59,A60..64,A65..69,A70..74,A75..79,A80+,Unbekannt
 2020-KW10,,,,,,,,,,,,,2,,,,,
@@ -200,3 +200,4 @@ KW,A00..04,A05..09,A10..14,A15..19,A20..24,A25..29,A30..34,A35..39,A40..44,A45..
 2024-KW03,,,,,,,1,,,,,,,1,1,,2,
 2024-KW04,,,,,,,1,,,,,2,,2,,,1,
 2024-KW05,,,,,,,,,,,,,,1,,,,
+2024-KW06,,,,,,,,,,,,,,,,,1,
